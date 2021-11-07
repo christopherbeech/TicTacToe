@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFF;
+    background: #4cc9f0;
+  }
+  h1 {
+    font-weight: normal;
+    font-size: 4rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .player-turn {
+    margin-bottom: 10px;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  .wrapper{
+    width: 25vw;
+    margin: 0 auto;
+    box-shadow: 5px 5px 12px rgba(255, 255, 255, 0.5),
+    -5px -5px 12px rgba(0, 0, 0, 0.5);
+    
+  }
+  table td {
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgba(236, 236, 236, 0.5);
+    cursor: pointer;
+  }
+  table td:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  table td:before {
+    font-size: 1.5em;
+    line-height: 1;
+  }
+  table td.cross:before {
+    color: #7209b7;
+    content: "x";
+    font-size:5rem;
+    text-shadow: 1px 1px rgba(225, 255, 255, 0.7),
+    -1px -1px rgba(0, 0, 0, 0.7);
+  }
+  table td.circle:before {
+    color: #f72585;
+    content: "o";
+    font-size:5rem;
+    text-shadow: 1px 1px rgba(225, 255, 255, 0.7),
+    -1px -1px rgba(0, 0, 0, 0.7);
+  }
+  .reset-btn {
+    background: #4cc9f0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7),
+    -4px -4px 12px rgba(0, 0, 0, 0.7);
+    padding: 15px 15px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+  }
+  .reset-btn:active{
+    transform: scale(0.9);
+    box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.7),
+    inset -4px -4px 6px rgba(0, 0, 0, 0.7);
+  }
+  .reset-btn:hover {
+    opacity: 0.8;
+  }
